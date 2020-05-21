@@ -1,0 +1,7 @@
+{
+    "port": "COM5",
+    "programmer": "AVRISP mkII",
+    "board": "arduino:avr:mega",
+    "configuration": "cpu=atmega2560",
+    "sketch": "servo\\servo.ino"
+}
