@@ -53,17 +53,10 @@ cube([MG996R_full_width,
 translate ([0,
     -(MG996R_full_depth + 2 * thickness),
     -MG996R_screw_height + thickness])
-difference(
-    cube([MG996R_screw_width,
-        MG996R_full_depth + thickness,
-        MG996R_screw_height]
-    ),
-    union(
-        cylinder(screw_hole_height, d=screw_hole_diameter),
-        cylinder(screw_hole_height, d=screw_hole_diameter)
-    )
-);
-    
+cube([MG996R_screw_width,
+    MG996R_full_depth + thickness,
+    MG996R_screw_height]);
+
 // MG996R left
 translate ([MG996R_full_width - MG996R_screw_width,
     -(MG996R_full_depth + 2 * thickness),
